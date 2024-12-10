@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name= "Areas">
+        <item> Todos </item>
+        <item> Abarrotes </item>
+        <item> Botanas </item>
+        <item> Carnes </item>
+        <item> Congelados </item>
+        <item> Dulces </item>
+        <item> Enlatados </item>
+        <item> Lacteos y Quesos </item>
+        <item> Pescados </item>
+        <item> Refrescos </item>
+        <item> Salchichoneria </item>
+        <item> Vinos y Licores </item>
+    </string-array>
+
+</resources>

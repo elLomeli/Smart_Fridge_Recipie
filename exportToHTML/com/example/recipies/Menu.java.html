@@ -1,0 +1,432 @@
+<html>
+<head>
+<title>Menu.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #808080;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Menu.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.example.recipies</span><span class="s0">;</span>
+
+<span class="s0">import </span><span class="s1">android.annotation.SuppressLint</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.bluetooth.BluetoothAdapter</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.bluetooth.BluetoothDevice</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.bluetooth.BluetoothSocket</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.content.Context</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.content.Intent</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.content.SharedPreferences</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.os.Bundle</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.os.Handler</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.os.Looper</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.os.Message</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.view.View</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.view.WindowManager</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.widget.ImageView</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.widget.LinearLayout</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.widget.TextView</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">android.widget.Toast</span><span class="s0">;</span>
+
+<span class="s0">import </span><span class="s1">androidx.appcompat.app.AppCompatActivity</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">androidx.core.content.ContextCompat</span><span class="s0">;</span>
+
+<span class="s0">import </span><span class="s1">com.airbnb.lottie.LottieAnimationView</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">com.airbnb.lottie.LottieDrawable</span><span class="s0">;</span>
+
+<span class="s0">import </span><span class="s1">java.io.IOException</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">java.io.InputStream</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">java.text.SimpleDateFormat</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">java.util.Date</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">java.util.Locale</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">java.util.UUID</span><span class="s0">;</span>
+
+<span class="s0">import </span><span class="s1">Correo.JavaMailAPI</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">adapatores_animaciones.Adaptador_AnimacionAlimentos</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">adapatores_animaciones.Adaptador_AnimacionConfiguracion</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">adapatores_animaciones.Adaptador_AnimacionPA</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">Menu </span><span class="s0">extends </span><span class="s1">AppCompatActivity {</span>
+    <span class="s0">private </span><span class="s1">ImageView bluetoothbutton</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">TextView textViewBluetoothData</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">BluetoothAdapter bluetoothAdapter</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">BluetoothSocket btSocket = </span><span class="s0">null;</span>
+    <span class="s0">private </span><span class="s1">InputStream inStream</span><span class="s0">;</span>
+    <span class="s0">private static final </span><span class="s1">UUID MY_UUID = UUID.fromString(</span><span class="s2">&quot;00001101-0000-1000-8000-00805F9B34FB&quot;</span><span class="s1">)</span><span class="s0">; </span><span class="s3">// UUID para el módulo Bluetooth SPP</span>
+    <span class="s0">private static final int </span><span class="s1">REQUEST_CONNECT_DEVICE = </span><span class="s4">1</span><span class="s0">;</span>
+    <span class="s0">private static final int </span><span class="s1">REQUEST_ENABLE_BT = </span><span class="s4">2</span><span class="s0">;</span>
+    <span class="s0">private static final </span><span class="s1">String PREFS_NAME = </span><span class="s2">&quot;BluetoothPrefs&quot;</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">LottieAnimationView animationConfiguracion</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">LottieAnimationView animationPlan</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">LottieAnimationView animationAlimento</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">LottieAnimationView animationFree</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">LottieAnimationView animationCalendario</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">LottieAnimationView animationTemperaturta</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">TextView dateTextView</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">TextView horaTextView</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">Handler handler</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">LinearLayout linearLayoutTemp</span><span class="s0">;</span>
+    <span class="s0">private double </span><span class="s1">temperaturaAnterior = Double.MIN_VALUE</span><span class="s0">; </span><span class="s3">// Inicializado con un valor que no se encuentra en el rango de temperatura</span>
+    <span class="s0">public </span><span class="s1">String temperaturaStr</span><span class="s0">;</span>
+    <span class="s0">public </span><span class="s1">String humedad</span><span class="s0">;</span>
+    <span class="s0">private int </span><span class="s1">tiempoActual = </span><span class="s4">0</span><span class="s0">;</span>
+    <span class="s0">private boolean </span><span class="s1">correoEnviado</span><span class="s0">;</span>
+    <span class="s0">private static final int </span><span class="s1">INTERVALO_TEMPORIZADOR = </span><span class="s4">1000</span><span class="s0">; </span><span class="s3">// Intervalo en segundos</span>
+    <span class="s0">private static final int </span><span class="s1">TIEMPO_LIMITE = </span><span class="s4">1 </span><span class="s1">* </span><span class="s4">60</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">String email</span><span class="s0">;</span>
+
+    <span class="s1">@Override</span>
+    <span class="s0">protected void </span><span class="s1">onCreate(Bundle savedInstanceState) {</span>
+        <span class="s0">super</span><span class="s1">.onCreate(savedInstanceState)</span><span class="s0">;</span>
+        <span class="s1">setContentView(R.layout.activity_menu)</span><span class="s0">;</span>
+
+        <span class="s3">// Evitar que la pantalla se apague</span>
+         <span class="s1">getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)</span><span class="s0">;</span>
+
+        <span class="s1">bluetoothbutton = findViewById(R.id.BluetoothButton)</span><span class="s0">;</span>
+        <span class="s1">textViewBluetoothData = findViewById(R.id.textViewBluetoothdata)</span><span class="s0">;</span>
+        <span class="s1">animationConfiguracion = findViewById(R.id.Configuracion)</span><span class="s0">;</span>
+        <span class="s1">animationPlan = findViewById(R.id.plan)</span><span class="s0">;</span>
+        <span class="s1">animationAlimento = findViewById(R.id.alimentos)</span><span class="s0">;</span>
+        <span class="s1">animationFree = findViewById(R.id.recetas)</span><span class="s0">;</span>
+        <span class="s1">animationCalendario = findViewById(R.id.calendario)</span><span class="s0">;</span>
+        <span class="s1">animationTemperaturta = findViewById(R.id.animacionTemp)</span><span class="s0">;</span>
+        <span class="s1">dateTextView = findViewById(R.id.dateTextView)</span><span class="s0">;</span>
+        <span class="s1">handler = </span><span class="s0">new </span><span class="s1">Handler(Looper.getMainLooper())</span><span class="s0">;</span>
+        <span class="s1">horaTextView = findViewById(R.id.hora)</span><span class="s0">;</span>
+        <span class="s1">linearLayoutTemp = findViewById(R.id.LinearLayoutTemp)</span><span class="s0">;</span>
+        <span class="s1">correoEnviado = </span><span class="s0">false;</span>
+
+        <span class="s1">SharedPreferences sharedPrefs = getSharedPreferences(</span><span class="s2">&quot;correo&quot;</span><span class="s0">, </span><span class="s1">Context.MODE_PRIVATE)</span><span class="s0">;</span>
+        <span class="s1">email = sharedPrefs.getString(</span><span class="s2">&quot;email&quot;</span><span class="s0">,null</span><span class="s1">)</span><span class="s0">;</span>
+
+
+        <span class="s3">// Inicialmente, muestra la hora actual</span>
+        <span class="s1">updateHour()</span><span class="s0">;</span>
+
+        <span class="s3">// Programa actualizaciones constantes de la hora</span>
+        <span class="s1">scheduleHourUpdate()</span><span class="s0">;</span>
+
+        <span class="s1">animationCalendario.setRepeatCount(LottieDrawable.INFINITE)</span><span class="s0">;</span>
+        <span class="s1">animationCalendario.playAnimation()</span><span class="s0">;</span>
+
+        <span class="s1">animationFree.setRepeatCount(LottieDrawable.INFINITE)</span><span class="s0">;</span>
+        <span class="s1">animationFree.playAnimation()</span><span class="s0">;</span>
+
+        <span class="s3">// Configuración del adaptador Bluetooth</span>
+        <span class="s1">bluetoothAdapter = BluetoothAdapter.getDefaultAdapter()</span><span class="s0">;</span>
+        <span class="s0">if </span><span class="s1">(bluetoothAdapter == </span><span class="s0">null</span><span class="s1">) {</span>
+            <span class="s3">// El dispositivo no admite Bluetooth</span>
+            <span class="s1">Toast.makeText(</span><span class="s0">this, </span><span class="s2">&quot;El dispositivo no admite Bluetooth&quot;</span><span class="s0">, </span><span class="s1">Toast.LENGTH_SHORT).show()</span><span class="s0">;</span>
+            <span class="s1">finish()</span><span class="s0">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">bluetoothbutton.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">onClick(View view) {</span>
+                <span class="s3">// Verificar si el Bluetooth está habilitado</span>
+                <span class="s0">if </span><span class="s1">(!bluetoothAdapter.isEnabled()) {</span>
+                    <span class="s3">// Si el Bluetooth está apagado, intenta habilitarlo</span>
+                    <span class="s1">Intent enableBtIntent = </span><span class="s0">new </span><span class="s1">Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)</span><span class="s0">;</span>
+                    <span class="s1">startActivityForResult(enableBtIntent</span><span class="s0">, </span><span class="s1">REQUEST_ENABLE_BT)</span><span class="s0">;</span>
+                <span class="s1">} </span><span class="s0">else </span><span class="s1">{</span>
+                    <span class="s3">// El Bluetooth ya está habilitado, inicia la búsqueda de dispositivos</span>
+                    <span class="s1">Intent intent = </span><span class="s0">new </span><span class="s1">Intent(Menu.</span><span class="s0">this, </span><span class="s1">Dispositivos_Vinculados.</span><span class="s0">class</span><span class="s1">)</span><span class="s0">;</span>
+                    <span class="s1">startActivityForResult(intent</span><span class="s0">, </span><span class="s1">REQUEST_CONNECT_DEVICE)</span><span class="s0">;</span>
+                <span class="s1">}</span>
+            <span class="s1">}</span>
+        <span class="s1">})</span><span class="s0">;</span>
+
+        <span class="s1">animationConfiguracion.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">onClick(View view) {</span>
+                <span class="s3">// Desactivar el botón mientras la animación está en curso</span>
+                <span class="s1">animationConfiguracion.setEnabled(</span><span class="s0">false</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s3">// Mostrar la animación cuando se hace clic en el botón</span>
+                <span class="s1">animationConfiguracion.setVisibility(View.VISIBLE)</span><span class="s0">;</span>
+                <span class="s1">animationConfiguracion.setAnimation(R.raw.configuracion)</span><span class="s0">;</span>
+                <span class="s1">animationConfiguracion.playAnimation()</span><span class="s0">;</span>
+                <span class="s1">animationConfiguracion.addAnimatorListener(</span><span class="s0">new </span><span class="s1">Adaptador_AnimacionConfiguracion(animationConfiguracion</span><span class="s0">, </span><span class="s1">Menu.</span><span class="s0">this</span><span class="s1">))</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">})</span><span class="s0">;</span>
+        <span class="s1">animationPlan.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">onClick(View view) {</span>
+                <span class="s3">// Desactivar el botón mientras la animación está en curso</span>
+                <span class="s1">animationPlan.setEnabled(</span><span class="s0">false</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s3">// Mostrar la animación cuando se hace clic en el botón</span>
+                <span class="s1">animationPlan.setVisibility(View.VISIBLE)</span><span class="s0">;</span>
+                <span class="s1">animationPlan.setAnimation(R.raw.planalimenticio)</span><span class="s0">;</span>
+                <span class="s1">animationPlan.playAnimation()</span><span class="s0">;</span>
+                <span class="s1">animationPlan.addAnimatorListener(</span><span class="s0">new </span><span class="s1">Adaptador_AnimacionPA(animationPlan</span><span class="s0">, </span><span class="s1">Menu.</span><span class="s0">this</span><span class="s1">))</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">})</span><span class="s0">;</span>
+        <span class="s1">animationAlimento.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">onClick(View view) {</span>
+                <span class="s3">// Desactivar el botón mientras la animación está en curso</span>
+                <span class="s1">animationAlimento.setEnabled(</span><span class="s0">false</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s3">// Mostrar la animación cuando se hace clic en el botón</span>
+                <span class="s1">animationAlimento.setVisibility(View.VISIBLE)</span><span class="s0">;</span>
+                <span class="s1">animationAlimento.setAnimation(R.raw.alimentos)</span><span class="s0">;</span>
+                <span class="s1">animationAlimento.playAnimation()</span><span class="s0">;</span>
+                <span class="s1">animationAlimento.addAnimatorListener(</span><span class="s0">new </span><span class="s1">Adaptador_AnimacionAlimentos(animationAlimento</span><span class="s0">, </span><span class="s1">Menu.</span><span class="s0">this</span><span class="s1">))</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">})</span><span class="s0">;</span>
+        <span class="s1">animationFree.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">onClick(View view) {</span>
+                <span class="s1">Intent intent = </span><span class="s0">new </span><span class="s1">Intent(Menu.</span><span class="s0">this, </span><span class="s1">FreeRecipies.</span><span class="s0">class</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">startActivity(intent)</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">})</span><span class="s0">;</span>
+
+        <span class="s1">horaTextView.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">onClick(View view) {</span>
+                <span class="s1">Intent intent = </span><span class="s0">new </span><span class="s1">Intent(Menu.</span><span class="s0">this, </span><span class="s1">ViewPager_Hora.</span><span class="s0">class</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">startActivity(intent)</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">})</span><span class="s0">;</span>
+
+        <span class="s1">animationCalendario.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">onClick(View view) {</span>
+                <span class="s1">Intent intent = </span><span class="s0">new </span><span class="s1">Intent(Menu.</span><span class="s0">this, </span><span class="s1">Calendario.</span><span class="s0">class</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">startActivity(intent)</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">})</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+
+
+    <span class="s1">@Override</span>
+    <span class="s0">protected void </span><span class="s1">onStart() {</span>
+        <span class="s0">super</span><span class="s1">.onStart()</span><span class="s0">;</span>
+        <span class="s3">// Inicialmente, muestra la fecha actual</span>
+        <span class="s1">updateDate()</span><span class="s0">;</span>
+
+        <span class="s3">// Programa actualizaciones diarias</span>
+        <span class="s1">scheduleDailyUpdate()</span><span class="s0">;</span>
+
+
+    <span class="s1">}</span>
+
+    <span class="s0">private void </span><span class="s1">updateDate() {</span>
+        <span class="s3">// Obtiene la fecha actual</span>
+        <span class="s1">Date currentDate = </span><span class="s0">new </span><span class="s1">Date()</span><span class="s0">;</span>
+
+        <span class="s3">// Formatea la fecha en el formato deseado (por ejemplo, &quot;dd/MM/yyyy&quot;)</span>
+        <span class="s1">SimpleDateFormat sdf = </span><span class="s0">new </span><span class="s1">SimpleDateFormat(</span><span class="s2">&quot;dd/MM/yyyy&quot;</span><span class="s0">, </span><span class="s1">Locale.getDefault())</span><span class="s0">;</span>
+        <span class="s1">String formattedDate = sdf.format(currentDate)</span><span class="s0">;</span>
+
+        <span class="s3">// Actualiza el TextView con la nueva fecha</span>
+        <span class="s1">dateTextView.setText(formattedDate)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">private void </span><span class="s1">scheduleDailyUpdate() {</span>
+        <span class="s1">handler.postDelayed(</span><span class="s0">new </span><span class="s1">Runnable() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">run() {</span>
+                <span class="s1">updateDate()</span><span class="s0">;</span>
+
+                <span class="s3">// Programa la próxima actualización diaria</span>
+                <span class="s1">scheduleDailyUpdate()</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span><span class="s0">, </span><span class="s1">getNextMidnightMillis())</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">private void </span><span class="s1">updateHour() {</span>
+        <span class="s3">// Obtiene la hora actual</span>
+        <span class="s1">Date currentTime = </span><span class="s0">new </span><span class="s1">Date()</span><span class="s0">;</span>
+
+        <span class="s3">// Formatea la hora en el formato deseado (por ejemplo, &quot;HH:mm:ss&quot;)</span>
+        <span class="s1">SimpleDateFormat sdf = </span><span class="s0">new </span><span class="s1">SimpleDateFormat(</span><span class="s2">&quot;HH:mm:ss&quot;</span><span class="s0">, </span><span class="s1">Locale.getDefault())</span><span class="s0">;</span>
+        <span class="s1">String formattedHour = sdf.format(currentTime)</span><span class="s0">;</span>
+
+        <span class="s3">// Actualiza el TextView con la nueva hora</span>
+        <span class="s1">horaTextView.setText(formattedHour)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">private void </span><span class="s1">scheduleHourUpdate() {</span>
+        <span class="s1">handler.postDelayed(</span><span class="s0">new </span><span class="s1">Runnable() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">run() {</span>
+                <span class="s1">updateHour()</span><span class="s0">;</span>
+
+                <span class="s3">// Programa la próxima actualización (cada segundo)</span>
+                <span class="s1">scheduleHourUpdate()</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span><span class="s0">, </span><span class="s4">1000</span><span class="s1">)</span><span class="s0">; </span><span class="s3">// Actualizar cada segundo (1000 ms)</span>
+    <span class="s1">}</span>
+
+    <span class="s0">private long </span><span class="s1">getNextMidnightMillis() {</span>
+        <span class="s0">long </span><span class="s1">currentTimeMillis = System.currentTimeMillis()</span><span class="s0">;</span>
+        <span class="s0">long </span><span class="s1">nextMidnightMillis = ((currentTimeMillis / </span><span class="s4">86400000</span><span class="s1">) + </span><span class="s4">1</span><span class="s1">) * </span><span class="s4">86400000</span><span class="s0">; </span><span class="s3">// Próxima medianoche en milisegundos</span>
+        <span class="s0">return </span><span class="s1">nextMidnightMillis - currentTimeMillis</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">@Override</span>
+    <span class="s0">protected void </span><span class="s1">onActivityResult(</span><span class="s0">int </span><span class="s1">requestCode</span><span class="s0">, int </span><span class="s1">resultCode</span><span class="s0">, </span><span class="s1">Intent data) {</span>
+        <span class="s0">super</span><span class="s1">.onActivityResult(requestCode</span><span class="s0">, </span><span class="s1">resultCode</span><span class="s0">, </span><span class="s1">data)</span><span class="s0">;</span>
+
+        <span class="s0">if </span><span class="s1">(requestCode == REQUEST_CONNECT_DEVICE &amp;&amp; resultCode == RESULT_OK) {</span>
+            <span class="s3">// Obtiene la dirección MAC del dispositivo seleccionado</span>
+            <span class="s1">String deviceAddress = data.getStringExtra(</span><span class="s2">&quot;DEVICE_ADDRESS&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+            <span class="s3">// Conecta al dispositivo Bluetooth</span>
+            <span class="s1">connectToBluetoothDevice(deviceAddress)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">(requestCode == REQUEST_ENABLE_BT) {</span>
+            <span class="s3">// Verifica si se han habilitado los permisos de Bluetooth</span>
+            <span class="s0">if </span><span class="s1">(resultCode == RESULT_OK) {</span>
+                <span class="s3">// Los permisos de Bluetooth se han habilitado con éxito, inicia la búsqueda de dispositivos</span>
+                <span class="s1">Intent intent = </span><span class="s0">new </span><span class="s1">Intent(Menu.</span><span class="s0">this, </span><span class="s1">Dispositivos_Vinculados.</span><span class="s0">class</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">startActivityForResult(intent</span><span class="s0">, </span><span class="s1">REQUEST_CONNECT_DEVICE)</span><span class="s0">;</span>
+            <span class="s1">} </span><span class="s0">else </span><span class="s1">{</span>
+                <span class="s3">// Los permisos de Bluetooth no se habilitaron, muestra un mensaje o realiza una acción adecuada</span>
+                <span class="s1">Toast.makeText(</span><span class="s0">this, </span><span class="s2">&quot;No se habilitaron los permisos de Bluetooth&quot;</span><span class="s0">, </span><span class="s1">Toast.LENGTH_SHORT).show()</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+    <span class="s0">private void </span><span class="s1">connectToBluetoothDevice(String deviceAddress) {</span>
+        <span class="s1">BluetoothDevice device = bluetoothAdapter.getRemoteDevice(deviceAddress)</span><span class="s0">;</span>
+        <span class="s1">SharedPreferences.Editor editor = getSharedPreferences(PREFS_NAME</span><span class="s0">, </span><span class="s1">MODE_PRIVATE).edit()</span><span class="s0">;</span>
+        <span class="s1">editor.apply()</span><span class="s0">;</span>
+        <span class="s0">try </span><span class="s1">{</span>
+            <span class="s1">btSocket = device.createRfcommSocketToServiceRecord(MY_UUID)</span><span class="s0">;</span>
+            <span class="s1">btSocket.connect()</span><span class="s0">;</span>
+            <span class="s1">inStream = btSocket.getInputStream()</span><span class="s0">;</span>
+
+            <span class="s3">// Iniciar un hilo para leer datos del flujo de entrada</span>
+            <span class="s1">startBluetoothConnection()</span><span class="s0">;</span>
+            <span class="s1">Toast.makeText(</span><span class="s0">this, </span><span class="s2">&quot;Conectado Exitosamente&quot;</span><span class="s0">, </span><span class="s1">Toast.LENGTH_SHORT).show()</span><span class="s0">;</span>
+
+        <span class="s1">} </span><span class="s0">catch </span><span class="s1">(IOException e) {</span>
+            <span class="s3">// Manejar errores de conexión</span>
+            <span class="s1">bluetoothbutton.setImageResource(R.drawable.bluetooth_off)</span><span class="s0">;</span>
+            <span class="s1">Toast.makeText(</span><span class="s0">this, </span><span class="s2">&quot;Desconectado Exitosamente&quot;</span><span class="s0">, </span><span class="s1">Toast.LENGTH_SHORT).show()</span><span class="s0">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+    <span class="s0">private void </span><span class="s1">startBluetoothConnection() {</span>
+        <span class="s1">@SuppressLint(</span><span class="s2">&quot;HandlerLeak&quot;</span><span class="s1">) </span><span class="s0">final </span><span class="s1">Handler handler = </span><span class="s0">new </span><span class="s1">Handler() {</span>
+            <span class="s0">public void </span><span class="s1">handleMessage(Message msg) {</span>
+                <span class="s0">if </span><span class="s1">(msg.what == </span><span class="s4">0</span><span class="s1">) {</span>
+                    <span class="s1">String readMessage = (String) msg.obj</span><span class="s0">;</span>
+                    <span class="s3">// Dividir la cadena en datos de temperatura y humedad</span>
+                    <span class="s1">String[] dataParts = readMessage.split(</span><span class="s2">&quot;,&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+                    <span class="s0">if </span><span class="s1">(dataParts.length &gt;= </span><span class="s4">2</span><span class="s1">) {</span>
+                        <span class="s3">// La primera parte es la temperatura y la segunda parte es la humedad</span>
+                        <span class="s1">temperaturaStr = dataParts[</span><span class="s4">0</span><span class="s1">]</span><span class="s0">; </span><span class="s3">// Supongamos que obtuviste la temperatura como una cadena</span>
+                        <span class="s1">humedad = dataParts[</span><span class="s4">1</span><span class="s1">]</span><span class="s0">;</span>
+                        <span class="s0">if </span><span class="s1">(!temperaturaStr.isEmpty()) {</span>
+                            <span class="s0">try </span><span class="s1">{</span>
+                                <span class="s1">Integer temperatura = Integer.parseInt(temperaturaStr)</span><span class="s0">; </span><span class="s3">// Convierte la cadena a un número</span>
+                                <span class="s3">// Mostrar los datos en los TextView</span>
+                                <span class="s1">textViewBluetoothData.setText(temperatura + </span><span class="s2">&quot; °C&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                                <span class="s0">if </span><span class="s1">(temperatura != temperaturaAnterior) {</span>
+                                    <span class="s3">// La temperatura ha cambiado, actualiza la animación</span>
+                                    <span class="s0">if </span><span class="s1">(temperatura &lt; </span><span class="s4">1</span><span class="s1">) {</span>
+                                        <span class="s1">animationTemperaturta.setAnimation(R.raw.congelando)</span><span class="s0">;</span>
+                                        <span class="s1">linearLayoutTemp.setBackgroundColor(ContextCompat.getColor(Menu.</span><span class="s0">this, </span><span class="s1">R.color.Congelando))</span><span class="s0">;</span>
+
+                                    <span class="s1">} </span><span class="s0">else if </span><span class="s1">(temperatura &gt;= </span><span class="s4">1 </span><span class="s1">&amp;&amp; temperatura &lt;= </span><span class="s4">6</span><span class="s1">) {</span>
+                                        <span class="s1">animationTemperaturta.setAnimation(R.raw.termometrofrio)</span><span class="s0">;</span>
+                                        <span class="s1">linearLayoutTemp.setBackgroundColor(ContextCompat.getColor(Menu.</span><span class="s0">this, </span><span class="s1">R.color.Perfecto))</span><span class="s0">;</span>
+                                        <span class="s1">correoEnviado = </span><span class="s0">true;</span>
+                                    <span class="s1">} </span><span class="s0">else if </span><span class="s1">(temperatura &gt;= </span><span class="s4">7 </span><span class="s1">&amp;&amp; temperatura &lt;= </span><span class="s4">10</span><span class="s1">) {</span>
+                                        <span class="s1">linearLayoutTemp.setBackgroundColor(ContextCompat.getColor(Menu.</span><span class="s0">this, </span><span class="s1">R.color.Aceptable))</span><span class="s0">;</span>
+                                        <span class="s1">animationTemperaturta.setAnimation(R.raw.termometrocaliente)</span><span class="s0">;</span>
+                                        <span class="s1">correoEnviado = </span><span class="s0">true;</span>
+                                    <span class="s1">} </span><span class="s0">else </span><span class="s1">{</span>
+                                        <span class="s1">animationTemperaturta.setAnimation(R.raw.termometrocaliente)</span><span class="s0">;</span>
+                                        <span class="s1">linearLayoutTemp.setBackgroundColor(ContextCompat.getColor(Menu.</span><span class="s0">this, </span><span class="s1">R.color.Caliente))</span><span class="s0">;</span>
+                                    <span class="s1">}</span>
+                                    <span class="s3">// Inicia la animación</span>
+                                    <span class="s1">animationTemperaturta.setRepeatCount(LottieDrawable.INFINITE)</span><span class="s0">;</span>
+                                    <span class="s1">animationTemperaturta.playAnimation()</span><span class="s0">;</span>
+
+                                    <span class="s3">// Actualiza la temperatura anterior</span>
+                                    <span class="s1">temperaturaAnterior = temperatura</span><span class="s0">;</span>
+
+                                    <span class="s0">final </span><span class="s1">Handler handler = </span><span class="s0">new </span><span class="s1">Handler()</span><span class="s0">;</span>
+                                    <span class="s1">handler.postDelayed(</span><span class="s0">new </span><span class="s1">Runnable() {</span>
+                                        <span class="s1">@Override</span>
+                                        <span class="s0">public void </span><span class="s1">run() {</span>
+                                            <span class="s3">// Verifica la temperatura aquí</span>
+                                            <span class="s0">if </span><span class="s1">(temperaturaAnterior == temperatura) {</span>
+                                                <span class="s1">tiempoActual += INTERVALO_TEMPORIZADOR / </span><span class="s4">1000</span><span class="s0">; </span><span class="s3">// Intervalo a segundos</span>
+                                            <span class="s1">} </span><span class="s0">else </span><span class="s1">{</span>
+                                                <span class="s1">tiempoActual = </span><span class="s4">0</span><span class="s0">; </span><span class="s3">// Reinicia el tiempo si la temperatura es menor de 10 grados</span>
+                                            <span class="s1">}</span>
+
+                                            <span class="s3">// Si el tiempo supera el límite y el correo no se ha enviado, envía el correo</span>
+                                            <span class="s0">if </span><span class="s1">(tiempoActual &gt;= TIEMPO_LIMITE &amp;&amp; !correoEnviado) {</span>
+                                                <span class="s1">enviarCorreo()</span><span class="s0">;</span>
+                                                <span class="s1">correoEnviado = </span><span class="s0">true; </span><span class="s3">// Marca que el correo ha sido enviado</span>
+                                            <span class="s1">}</span>
+
+                                            <span class="s3">// Programa la siguiente verificación</span>
+                                            <span class="s1">handler.postDelayed(</span><span class="s0">this, </span><span class="s1">INTERVALO_TEMPORIZADOR)</span><span class="s0">;</span>
+                                        <span class="s1">}</span>
+                                    <span class="s1">}</span><span class="s0">, </span><span class="s1">INTERVALO_TEMPORIZADOR)</span><span class="s0">;</span>
+                                <span class="s1">}</span>
+
+
+                            <span class="s1">} </span><span class="s0">catch </span><span class="s1">(NumberFormatException e) {</span>
+                                <span class="s3">// Manejar el caso en el que no se pudo convertir la cadena a un número</span>
+                                <span class="s3">// Puedes mostrar un mensaje de error, establecer una temperatura predeterminada, etc.</span>
+                            <span class="s1">}</span>
+                        <span class="s1">}</span>
+                    <span class="s1">}</span>
+                <span class="s1">}</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span><span class="s0">;</span>
+
+        <span class="s3">// Crear un hilo para leer datos del flujo de entrada</span>
+        <span class="s1">Thread workerThread = </span><span class="s0">new </span><span class="s1">Thread(</span><span class="s0">new </span><span class="s1">Runnable() {</span>
+            <span class="s0">public void </span><span class="s1">run() {</span>
+                <span class="s0">while </span><span class="s1">(!Thread.currentThread().isInterrupted()) {</span>
+                    <span class="s0">try </span><span class="s1">{</span>
+                        <span class="s0">int </span><span class="s1">bytesAvailable = inStream.available()</span><span class="s0">;</span>
+                        <span class="s0">if </span><span class="s1">(bytesAvailable &gt; </span><span class="s4">0</span><span class="s1">) {</span>
+                            <span class="s0">byte</span><span class="s1">[] packetBytes = </span><span class="s0">new byte</span><span class="s1">[bytesAvailable]</span><span class="s0">;</span>
+                            <span class="s1">inStream.read(packetBytes)</span><span class="s0">;</span>
+                            <span class="s1">String readMessage = </span><span class="s0">new </span><span class="s1">String(packetBytes</span><span class="s0">, </span><span class="s4">0</span><span class="s0">, </span><span class="s1">bytesAvailable)</span><span class="s0">;</span>
+                            <span class="s1">bluetoothbutton.setImageResource(R.drawable.bluetooth_on)</span><span class="s0">;</span>
+                            <span class="s3">// Envía los datos al Handler para su procesamientoz</span>
+                            <span class="s1">handler.obtainMessage(</span><span class="s4">0</span><span class="s0">, </span><span class="s1">readMessage).sendToTarget()</span><span class="s0">;</span>
+                        <span class="s1">}</span>
+                    <span class="s1">} </span><span class="s0">catch </span><span class="s1">(IOException ex) {</span>
+                        <span class="s1">bluetoothbutton.setImageResource(R.drawable.bluetooth_off)</span><span class="s0">;</span>
+                        <span class="s0">break;</span>
+                    <span class="s1">}</span>
+                <span class="s1">}</span>
+            <span class="s1">}</span>
+        <span class="s1">})</span><span class="s0">;</span>
+        <span class="s1">workerThread.start()</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">private void </span><span class="s1">enviarCorreo() {</span>
+        <span class="s1">String mSubject = </span><span class="s2">&quot;ALERTA DE TEMPERATURA&quot;</span><span class="s0">;</span>
+        <span class="s1">String mMessage = </span><span class="s2">&quot;PUEDE QUE TU REFIGERADOR ESTE ABIERTO, SI NO ES EL CASO, ES POSIBLE QUE ESTE FALLANDO YA QUE LA TEMPERATURA NO ESTA EN LOS RANGOS ACEPTABLES , LLAMA A UN TECNICO PARA QUE LO REVISE&quot;</span><span class="s0">;</span>
+        <span class="s1">JavaMailAPI javaMailAPI = </span><span class="s0">new </span><span class="s1">JavaMailAPI(</span><span class="s0">this, </span><span class="s1">email</span><span class="s0">, </span><span class="s1">mSubject</span><span class="s0">, </span><span class="s1">mMessage)</span><span class="s0">;</span>
+
+        <span class="s1">javaMailAPI.execute()</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+
+<span class="s1">}</span>
+</pre>
+</body>
+</html>

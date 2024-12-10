@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="FV">
+        <item>Fruta</item>
+        <item>Verdura</item>
+    </string-array>
+</resources>

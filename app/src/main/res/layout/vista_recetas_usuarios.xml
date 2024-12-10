@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="25dp">
+
+    <LinearLayout
+        android:id="@+id/abrirReceta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:background="@color/fondoSplash"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imagenRecetas"
+            android:layout_width="450dp"
+            android:layout_height="450dp"
+            android:layout_marginRight="50dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titulorecetas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/horariorecetas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="@font/montserratregular"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dos_personas"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/numPersonasrectas"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/favoriteIcon"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/favorite_selector"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Vegetarianorecetas"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="@font/montserratregular"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textSize="30sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBarRecetas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/IconGray"
+                android:progressTint="#FFB700"
+                android:rating="0" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

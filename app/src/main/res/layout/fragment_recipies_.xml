@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Recipies_Fragment"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="15dp">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageProducts"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="#DFD9D9" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageButton
+            android:id="@+id/addImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/txt"
+            android:src="@drawable/ic_camera"
+            android:onClick="Camera"
+            tools:ignore="SpeakableTextPresentCheck"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Titulo :"
+        android:fontFamily="@font/montserratbold"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/Titulo"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+
+        android:fontFamily="@font/montserratregular"
+        android:hint="Titulo"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Calorias :"
+            android:fontFamily="@font/montserratbold"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/txtcalorias"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:hint="Calorias"
+            android:fontFamily="@font/montserratregular"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Kcal/100g"
+            android:fontFamily="@font/montserratregular"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Vegetariana?"
+            android:fontFamily="@font/montserratbold"
+            android:textColor="@color/black"
+            android:textSize="35dp" />
+
+        <Spinner
+            android:id="@+id/vege"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:background="@color/IconGray"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Horario :"
+            android:fontFamily="@font/montserratbold"
+            android:textColor="@color/black"
+            android:textSize="35dp" />
+
+        <Spinner
+            android:id="@+id/HorarioSpinner"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:background="@color/IconGray"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Numero Personas :"
+            android:fontFamily="@font/montserratbold"
+            android:textColor="@color/black"
+            android:textSize="35dp" />
+
+        <Spinner
+            android:id="@+id/personas"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:background="@color/IconGray"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Plan Alimencio? :"
+            android:fontFamily="@font/montserratbold"
+            android:textColor="@color/black"
+            android:textSize="35dp" />
+
+        <Spinner
+            android:id="@+id/spinnerplan"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:background="@color/IconGray"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/txt_Ingredientes"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:fontFamily="@font/montserratregular"
+            android:textColor="@color/black"
+            android:text="Ingredientes:"
+            android:textSize="18dp"
+            />
+
+        <Button
+            android:id="@+id/addIngredientes"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="+"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewIngredientes"
+            android:layout_width="700dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/txt_Steps"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:fontFamily="@font/montserratregular"
+            android:textColor="@color/black"
+            android:text="Pasos a Preparar:"
+            android:textSize="18dp"
+            />
+
+        <Button
+            android:id="@+id/addSteps"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="+"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewPasos"
+        android:layout_width="700dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <Button
+        android:id="@+id/addRecipies"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="AGREGAR"
+
+        android:textSize="11sp" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

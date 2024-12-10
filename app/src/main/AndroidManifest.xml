@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo3"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Recipies"
+        tools:targetApi="31">
+        <service android:name=".BluetoothService" />
+        <activity
+            android:name=".agregarProductoNuevo"
+            android:exported="false" />
+        <activity
+            android:name=".MostrarFV"
+            android:exported="false" />
+        <activity
+            android:name=".MostrarProducto"
+            android:exported="false" />
+        <service
+            android:name=".BackgroundService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".Viewpager_PlanHorarios"
+            android:exported="false" />
+        <activity
+            android:name=".RecetasPlanAlimenticioCena"
+            android:exported="false" />
+        <activity
+            android:name=".SeleccionarImagenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FormularioPerfiles"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MostrarReceta"
+            android:exported="false" />
+        <activity
+            android:name=".MostrarRecetaDesayuno"
+            android:exported="false" />
+        <activity
+            android:name=".MostrarRecetaComida"
+            android:exported="false" />
+        <activity
+            android:name=".MostrarRecetaCena"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPager_Hora"
+            android:exported="false" />
+        <activity
+            android:name=".Temporizador"
+            android:exported="false" />
+        <activity
+            android:name=".Cronometro"
+            android:exported="false" />
+        <activity
+            android:name=".Alimentos"
+            android:exported="false" />
+        <activity
+            android:name=".FreeRecipies"
+            android:exported="false" />
+        <activity
+            android:name=".Calendario"
+            android:exported="false" />
+        <activity
+            android:name=".MenosSobras"
+            android:exported="false" />
+        <activity
+            android:name=".PlanAlimenticio"
+            android:exported="false" />
+        <activity
+            android:name=".Reloj"
+            android:exported="false" />
+        <activity
+            android:name=".Configuracion_Menu"
+            android:exported="false" />
+        <activity
+            android:name=".Dispositivos_Vinculados"
+            android:exported="false" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name=".ViewPager_Cruds"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot"
+            android:exported="false" />
+        <activity
+            android:name=".Menu"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

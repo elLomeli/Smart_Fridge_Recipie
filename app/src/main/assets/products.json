@@ -1,0 +1,1834 @@
+[
+  {
+    "nombre": "aceituna fresca",
+    "temperaturaMinima": 5,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 28,
+    "tiempoMaximo": 42
+  },
+  {
+    "nombre": "acelga",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 10,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "acerola",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 49,
+    "tiempoMaximo": 56
+  },
+  {
+    "nombre": "achicoria",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "ajo",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 65,
+    "humedadMaxima": 70,
+    "tiempoMinimo": 180,
+    "tiempoMaximo": 210
+  },
+  {
+    "nombre": "albahaca",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 85,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 7
+  },
+  {
+    "nombre": "alcaucil",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "alcayota",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 7,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 28,
+    "tiempoMaximo": 42
+  },
+  {
+    "nombre": "ananá",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "anona",
+    "temperaturaMinima": 5,
+    "temperaturaMaxima": 7,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 28,
+    "tiempoMaximo": 42
+  },
+  {
+    "nombre": "apio",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 90
+  },
+  {
+    "nombre": "apionabo",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 98,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 180,
+    "tiempoMaximo": 240
+  },
+  {
+    "nombre": "arándano azul",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "arándano rojo",
+    "temperaturaMinima": 2,
+    "temperaturaMaxima": 4,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 120
+  },
+  {
+    "nombre": "arveja",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "arveja china",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "atemoya",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 28,
+    "tiempoMaximo": 42
+  },
+  {
+    "nombre": "babaco",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 7,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "plátano",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "batata",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 120,
+    "tiempoMaximo": 210
+  },
+  {
+    "nombre": "berenjena",
+    "temperaturaMinima": 8,
+    "temperaturaMaxima": 12,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 7
+  },
+  {
+    "nombre": "berro",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "bledo",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 2,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 10,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "bok choy",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "brócoli",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "brotes germinados",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 7
+  },
+  {
+    "nombre": "caimito",
+    "temperaturaMinima": 3,
+    "temperaturaMaxima": 3,
+    "humedadMinima": 90,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "calamondin",
+    "temperaturaMinima": 9,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 90,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "caqui",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 90,
+    "tiempoMaximo": 120
+  },
+  {
+    "nombre": "carambola",
+    "temperaturaMinima": 9,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "cebolla bulbo",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 65,
+    "humedadMaxima": 70,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 240
+  },
+  {
+    "nombre": "cebolla de verdeo",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "cebollino",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "cereza",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 0.5,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "ciruelas",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 35
+  },
+  {
+    "nombre": "coco",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1.5,
+    "humedadMinima": 80,
+    "humedadMaxima": 85,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 60
+  },
+  {
+    "nombre": "coliflor",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 98,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "colirábano",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 98,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 90
+  },
+  {
+    "nombre": "col rizada",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 10,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "chaucha",
+    "temperaturaMinima": 4,
+    "temperaturaMaxima": 7,
+    "humedadMinima": 95,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 10
+  },
+  {
+    "nombre": "cherimoya",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "chicosapote",
+    "temperaturaMinima": 15,
+    "temperaturaMaxima": 20,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "chirivia",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 120,
+    "tiempoMaximo": 180
+  },
+  {
+    "nombre": "choclo",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1.5,
+    "humedadMinima": 95,
+    "humedadMaxima": 98,
+    "tiempoMinimo": 5,
+    "tiempoMaximo": 8
+  },
+  {
+    "nombre": "daikon",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 120,
+    "tiempoMaximo": 120
+  },
+  {
+    "nombre": "damasco",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "dátiles",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 75,
+    "humedadMaxima": 75,
+    "tiempoMinimo": 180,
+    "tiempoMaximo": 360
+  },
+  {
+    "nombre": "durazno",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "durián",
+    "temperaturaMinima": 4,
+    "temperaturaMaxima": 6,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 42,
+    "tiempoMaximo": 56
+  },
+  {
+    "nombre": "endivia",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 3,
+    "humedadMinima": 95,
+    "humedadMaxima": 98,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "escarola",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "espárrago",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 2,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "espinaca",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 10,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "feijoa",
+    "temperaturaMinima": 5,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 90,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "frambuesa",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 2,
+    "tiempoMaximo": 3
+  },
+  {
+    "nombre": "fruto árbol del pan",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 42
+  },
+  {
+    "nombre": "frutilla",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 5,
+    "tiempoMaximo": 7
+  },
+
+  {
+    "nombre": "grosella",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "guanábana",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "guinda",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 3,
+    "tiempoMaximo": 7
+  },
+  {
+    "nombre": "haba",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 2,
+    "humedadMinima": 90,
+    "humedadMaxima": 98,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "higos",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 10
+  },
+  {
+    "nombre": "hinojo",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 2,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "hongos comestibles",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1.5,
+    "humedadMinima": 95,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 5,
+    "tiempoMaximo": 7
+  },
+  {
+    "nombre": "jaboticaba",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 2,
+    "tiempoMaximo": 3
+  },
+  {
+    "nombre": "jaca",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 42
+  },
+  {
+    "nombre": "jenjibre",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 65,
+    "humedadMaxima": 65,
+    "tiempoMinimo": 180,
+    "tiempoMaximo": 180
+  },
+  {
+    "nombre": "jicama",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 18,
+    "humedadMinima": 65,
+    "humedadMaxima": 70,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 60
+  },
+  {
+    "nombre": "kiwano",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 90,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 180,
+    "tiempoMaximo": 180
+  },
+  {
+    "nombre": "kiwi",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 90,
+    "tiempoMaximo": 150
+  },
+  {
+    "nombre": "kumquat",
+    "temperaturaMinima": 4,
+    "temperaturaMaxima": 4,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "lechuga",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 2,
+    "humedadMinima": 98,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "lima",
+    "temperaturaMinima": 9,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 42,
+    "tiempoMaximo": 56
+  },
+  {
+    "nombre": "limón",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 180
+  },
+  {
+    "nombre": "litchi",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 2,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 35
+  },
+  {
+    "nombre": "longan",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 2,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 35
+  },
+  {
+    "nombre": "malanga",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 7,
+    "humedadMinima": 70,
+    "humedadMaxima": 80,
+    "tiempoMinimo": 90,
+    "tiempoMaximo": 90
+  },
+  {
+    "nombre": "mamey sapote",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 18,
+    "humedadMinima": 85,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 42
+  },
+  {
+    "nombre": "mango",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "mangostán",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "manzana",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 4,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 180
+  },
+  {
+    "nombre": "maracuyá",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 35
+  },
+  {
+    "nombre": "marañen",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 2,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 35,
+    "tiempoMaximo": 35
+  },
+  {
+    "nombre": "melón cantalupo inm.",
+    "temperaturaMinima": 2,
+    "temperaturaMaxima": 5,
+    "humedadMinima": 95,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 15,
+    "tiempoMaximo": 15
+  },
+  {
+    "nombre": "melón cantalupo maduro",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 2,
+    "humedadMinima": 95,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 5,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "melon chino",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 12,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "membrillo",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 90
+  },
+  {
+    "nombre": "mora",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 2,
+    "tiempoMaximo": 3
+  },
+  {
+    "nombre": "nabo",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 120,
+    "tiempoMaximo": 120
+  },
+  {
+    "nombre": "naranja",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 9,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 56,
+    "tiempoMaximo": 84
+  },
+  {
+    "nombre": "nectarines",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "níspero de japón",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "nopales",
+    "temperaturaMinima": 2,
+    "temperaturaMaxima": 4,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "ñame",
+    "temperaturaMinima": 16,
+    "temperaturaMaxima": 16,
+    "humedadMinima": 70,
+    "humedadMaxima": 80,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 210
+  },
+  {
+    "nombre": "okra",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 10
+  },
+  {
+    "nombre": "palta",
+    "temperaturaMinima": 3,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 56
+  },
+  {
+    "nombre": "papa inmadura",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 16,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 10,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "papa madura",
+    "temperaturaMinima": 4.5,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 150,
+    "tiempoMaximo": 300
+  },
+  {
+    "nombre": "papaya",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "pepino",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 95,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 10,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "pepino dulce",
+    "temperaturaMinima": 5,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 95,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 28,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "pera",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 210
+  },
+  {
+    "nombre": "perejil",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 60
+  },
+  {
+    "nombre": "pimiento",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "pitaya",
+    "temperaturaMinima": 6,
+    "temperaturaMaxima": 8,
+    "humedadMinima": 85,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "pomelo",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 42,
+    "tiempoMaximo": 56
+  },
+  {
+    "nombre": "poroto lima",
+    "temperaturaMinima": 3,
+    "temperaturaMaxima": 5,
+    "humedadMinima": 95,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 5,
+    "tiempoMaximo": 7
+  },
+  {
+    "nombre": "poroto seco",
+    "temperaturaMinima": 4,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 40,
+    "humedadMaxima": 50,
+    "tiempoMinimo": 180,
+    "tiempoMaximo": 300
+  },
+  {
+    "nombre": "puerro",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 90
+  },
+  {
+    "nombre": "rabanito",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "rábano picante",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 98,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 300,
+    "tiempoMaximo": 360
+  },
+  {
+    "nombre": "radicchio",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "rambutan",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 12,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "remolacha con hojas",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 98,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 10,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "remolacha sin hojas",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 98,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 120,
+    "tiempoMaximo": 180
+  },
+  {
+    "nombre": "repollo",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 98,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 150,
+    "tiempoMaximo": 180
+  },
+  {
+    "nombre": "repollo de bruselas",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 35
+  },
+  {
+    "nombre": "repollo chino",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 90
+  },
+  {
+    "nombre": "ruibarbo",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "rutabaga",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 98,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 120,
+    "tiempoMaximo": 180
+  },
+  {
+    "nombre": "salsifí",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 120
+  },
+  {
+    "nombre": "salsifí negro",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 98,
+    "tiempoMinimo": 180,
+    "tiempoMaximo": 180
+  },
+  {
+    "nombre": "sandía",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 90,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "sapote amarillo",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "sapote blanco",
+    "temperaturaMinima": 19,
+    "temperaturaMaxima": 21,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "sapote negro",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "tamarindo",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 7,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "taro",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 120,
+    "tiempoMaximo": 150
+  },
+  {
+    "nombre": "tomate verde maduro",
+    "temperaturaMinima": 12.5,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "tomate rojo maduro",
+    "temperaturaMinima": 8,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 8,
+    "tiempoMaximo": 10
+  },
+  {
+    "nombre": "tomate de árbol",
+    "temperaturaMinima": 3,
+    "temperaturaMaxima": 4,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "tomatillo",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "topinambur",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 120,
+    "tiempoMaximo": 150
+  },
+  {
+    "nombre": "tuna",
+    "temperaturaMinima": 2,
+    "temperaturaMaxima": 4,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "uva",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 56
+  },
+  {
+    "nombre": "yuca",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 5,
+    "humedadMinima": 85,
+    "humedadMaxima": 96,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 60
+  },
+  {
+    "nombre": "zanahoria con hoja",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 95,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "zanahoria sin hoja madura",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 98,
+    "humedadMaxima": 100,
+    "tiempoMinimo": 210,
+    "tiempoMaximo": 270
+  },
+  {
+    "nombre": "zapallo",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 50,
+    "humedadMaxima": 70,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 160
+  },
+  {
+    "nombre": "zapallito",
+    "temperaturaMinima": 5,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 95,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "guayaba",
+    "temperaturaMinima": 8,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 90,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 90
+  },
+  {
+    "nombre": "limón verde en general",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 14,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "limón coloreado en general",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 4.5,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 180
+  },
+  {
+    "nombre": "limón verde europeo",
+    "temperaturaMinima": 11,
+    "temperaturaMaxima": 14,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 120
+  },
+  {
+    "nombre": "limón europeo amarillo",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 42
+  },
+  {
+    "nombre": "limón mexicano",
+    "temperaturaMinima": 8,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 56
+  },
+
+  {
+    "nombre": "mandarina",
+    "temperaturaMinima": 4,
+    "temperaturaMaxima": 7,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "melón",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 49
+  },
+  {
+    "nombre": "naranja",
+    "temperaturaMinima": 3,
+    "temperaturaMaxima": 9,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 84
+  },
+  {
+    "nombre": "aguacate",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 12,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "piña verde",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "piña madura",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 8,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "plátano coloreado",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 16,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 20,
+    "tiempoMaximo": 20
+  },
+  {
+    "nombre": "plátano verde",
+    "temperaturaMinima": 12,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "sandía",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 90,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "toronja",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 42,
+    "tiempoMaximo": 56
+  },
+  {
+    "nombre": "durazno melocotón",
+    "temperaturaMinima": 0,
+    "temperaturaMaxima": 4,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "manzana golden nacional",
+    "temperaturaMinima": -1,
+    "temperaturaMaxima": 0,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 180
+  },
+  {
+    "nombre": "limón sin semilla",
+    "temperaturaMinima": 8,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 2,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "pepino criollo",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 95,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 10,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "limón con semilla",
+    "temperaturaMinima": 8,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 3,
+    "tiempoMaximo": 8
+  },
+  {
+    "nombre": "pera bosc",
+    "temperaturaMinima": -1,
+    "temperaturaMaxima": 0,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 210
+  },
+  {
+    "nombre": "chile poblano",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 10
+  },
+  {
+    "nombre": "jícama",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 18,
+    "humedadMinima": 65,
+    "humedadMaxima": 70,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 60
+  },
+  {
+    "nombre": "granada",
+    "temperaturaMinima": 5,
+    "temperaturaMaxima": 5,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 90
+  },
+  {
+    "nombre": "naranjada valencia",
+    "temperaturaMinima": 3,
+    "temperaturaMaxima": 9,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 28,
+    "tiempoMaximo": 84
+  },
+  {
+    "nombre": "berenjena",
+    "temperaturaMinima": 8,
+    "temperaturaMaxima": 12,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 7
+  },
+  {
+    "nombre": "pera red de anjou",
+    "temperaturaMinima": -1,
+    "temperaturaMaxima": 0,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 210
+  },
+
+  {
+    "nombre": "tomate verde sin cáscara",
+    "temperaturaMinima": 12.5,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "manzana royal gala",
+    "temperaturaMinima": -1,
+    "temperaturaMaxima": 0,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 180
+  },
+  {
+    "nombre": "cebolla amarilla",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 65,
+    "humedadMaxima": 70,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 240
+  },
+  {
+    "nombre": "pera de anjou",
+    "temperaturaMinima": -1,
+    "temperaturaMaxima": 0,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 210
+  },
+  {
+    "nombre": "manzana ambriosa",
+    "temperaturaMinima": -1,
+    "temperaturaMaxima": 0,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 120
+  },
+  {
+    "nombre": "durazno amarillo",
+    "temperaturaMinima": 0,
+    "temperaturaMaxima": 4,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "ciruela dapple",
+    "temperaturaMinima": -1,
+    "temperaturaMaxima": 0,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 60
+  },
+  {
+    "nombre": "ciruela nubiana",
+    "temperaturaMinima": -1,
+    "temperaturaMaxima": 0,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 60
+  },
+  {
+    "nombre": "kiwi",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 90,
+    "tiempoMaximo": 150
+  },
+  {
+    "nombre": "chile serrano",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 60
+  },
+  {
+    "nombre": "chile jalapeño",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 30
+  },
+  {
+    "nombre": "pera asiática",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 150,
+    "tiempoMaximo": 180
+  },
+  {
+    "nombre": "mamey",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 18,
+    "humedadMinima": 85,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 42
+  },
+  {
+    "nombre": "mandarina importada",
+    "temperaturaMinima": 4,
+    "temperaturaMaxima": 7,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "jitomate bola",
+    "temperaturaMinima": 8,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 8,
+    "tiempoMaximo": 10
+  },
+  {
+    "nombre": "jitomate saladet",
+    "temperaturaMinima": 8,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 8,
+    "tiempoMaximo": 10
+  },
+  {
+    "nombre": "plátano tabasco orgánico",
+    "temperaturaMinima": 12,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 7,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "camote amarillo nacional",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 120,
+    "tiempoMaximo": 210
+  },
+  {
+    "nombre": "plátano macho",
+    "temperaturaMinima": 13,
+    "temperaturaMaxima": 16,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 20,
+    "tiempoMaximo": 20
+  },
+  {
+    "nombre": "aguacate hass",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 12,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 1,
+    "tiempoMaximo": 2
+  },
+  {
+    "nombre": "manzana granny",
+    "temperaturaMinima": -1,
+    "temperaturaMaxima": 0,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 120
+  },
+  {
+    "nombre": "sandía sin semilla",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 90,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "cebolla blanca",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 65,
+    "humedadMaxima": 70,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 240
+  },
+  {
+    "nombre": "manzana red delicious",
+    "temperaturaMinima": -1,
+    "temperaturaMaxima": 0,
+    "humedadMinima": 90,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 180
+  },
+  {
+    "nombre": "chayote",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 7,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 28,
+    "tiempoMaximo": 42
+  },
+  {
+    "nombre": "pitahaya",
+    "temperaturaMinima": 6,
+    "temperaturaMaxima": 8,
+    "humedadMinima": 85,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "limón real",
+    "temperaturaMinima": 8,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 3,
+    "tiempoMaximo": 8
+  },
+  {
+    "nombre": "maracuyá",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 10,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 21,
+    "tiempoMaximo": 35
+  },
+  {
+    "nombre": "sandía yellow",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 90,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  },
+  {
+    "nombre": "calabaza spaghetti",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 50,
+    "humedadMaxima": 70,
+    "tiempoMinimo": 60,
+    "tiempoMaximo": 160
+  },
+  {
+    "nombre": "piña miel",
+    "temperaturaMinima": 7,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 28
+  },
+  {
+    "nombre": "pepino",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 13,
+    "humedadMinima": 95,
+    "humedadMaxima": 95,
+    "tiempoMinimo": 10,
+    "tiempoMaximo": 14
+  },
+  {
+    "nombre": "toronja sangría",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 85,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 42,
+    "tiempoMaximo": 56
+  },
+  {
+    "nombre": "cebolla morada",
+    "temperaturaMinima": 1,
+    "temperaturaMaxima": 1,
+    "humedadMinima": 65,
+    "humedadMaxima": 70,
+    "tiempoMinimo": 30,
+    "tiempoMaximo": 240
+  },
+  {
+    "nombre": "sandía charleston",
+    "temperaturaMinima": 10,
+    "temperaturaMaxima": 15,
+    "humedadMinima": 90,
+    "humedadMaxima": 90,
+    "tiempoMinimo": 14,
+    "tiempoMaximo": 21
+  }
+
+
+]

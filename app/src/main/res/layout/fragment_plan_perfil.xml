@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlanPerfil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/fondoSplash"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/white">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:text="PLAN ALIMENTICIO"
+                        android:gravity="center"
+                        android:maxLength="100"
+                        android:textColor="@color/black"
+                        android:textSize="40sp"
+                        android:fontFamily="@font/montserratbold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/white">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Nombre Completo :"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserratregular"
+                            android:textSize="25sp"/>
+
+                        <TextView
+                            android:id="@+id/textoPerfilNombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/white">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Edad :"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserratregular"
+                            android:textSize="25sp"/>
+
+                        <TextView
+                            android:id="@+id/textoPerfilEdad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Años"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserratregular"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/white">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Estatura"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserratregular"
+                            android:textSize="25sp"/>
+
+                        <TextView
+                            android:id="@+id/textoPerfilEstatura"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="cm"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserratregular"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/white">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Peso:"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserratregular"
+                            android:textSize="25sp"/>
+
+                        <TextView
+                            android:id="@+id/textoPerfilPeso"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Kg"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserratregular"
+                            android:textSize="25sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/white">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="IMC:"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserratregular"
+                            android:textSize="25sp"/>
+
+                        <TextView
+                            android:id="@+id/textoPerfilIMC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:inputType="numberDecimal"
+                            android:maxLength="4"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        <ImageView
+                            android:id="@+id/aceptableimc"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20dp"/>
+
+                        <TextView
+                            android:id="@+id/aceptableimctxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/montserratregular"
+                            android:layout_margin="20dp"
+                            tools:ignore="RtlHardcoded" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/white">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Calorias Necesarias Diarias:"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserratregular"
+                            android:textSize="25sp"/>
+
+                        <TextView
+                            android:id="@+id/textoPerfilTMB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:inputType="numberDecimal"
+                            android:maxLength="4"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Kcal"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserratregular"
+                            android:textSize="25sp"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/white">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Calorias Restantes Cumplir Meta Diaria:"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserratregular"
+                            android:textSize="25sp"/>
+
+                        <TextView
+                            android:id="@+id/textoPerfilCaloriasFaltantes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:inputType="numberDecimal"
+                            android:maxLength="4"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Kcal"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserratregular"
+                            android:textSize="25sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="20dp">
+
+                    <Button
+                        android:id="@+id/guardarMeta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="25sp"
+                        android:backgroundTint="@color/fondoSplash"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="20dp"
+                        android:text="Guardar Meta"/>
+
+                        <Spinner
+                            android:id="@+id/pesoSpinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_background"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:popupBackground="@color/fondoSplash"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/peso"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</FrameLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

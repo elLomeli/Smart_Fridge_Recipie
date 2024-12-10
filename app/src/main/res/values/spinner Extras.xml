@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Ex">
+        <item>Titulo</item>
+        <item>Numero de Personas</item>
+        <item>Horario</item>
+        <item>Vegetariana</item>
+        <item>Horario</item>
+        <item>Favoritos</item>
+        <item>Todos</item>
+        </string-array>
+</resources>

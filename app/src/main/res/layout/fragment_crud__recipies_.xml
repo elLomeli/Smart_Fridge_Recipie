@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Crud_Recipies_Fragment"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SearchView
+            android:id="@+id/searchRecetas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/fondoSplash"
+            android:iconifiedByDefault="false"
+            android:minHeight="40sp"
+            android:queryHint="Buscar Recetas ..." />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewRecetas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/agregarRecetas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/add"
+                    android:layout_gravity="bottom|left"
+                    app:backgroundTint="@color/fondoSplash"
+                    app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+                    tools:ignore="SpeakableTextPresentCheck"/>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom|right">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/verdugoRecetas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/borrar"
+                    android:visibility="invisible"
+                    app:backgroundTint="@color/fondoSplash"
+                    app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/eliminarRecetas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/borrar"
+                    app:backgroundTint="@color/fondoSplash"
+                    app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+
+</LinearLayout>

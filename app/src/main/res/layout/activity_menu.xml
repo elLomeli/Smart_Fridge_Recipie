@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Menu"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/BluetoothButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/bluetooth_off"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:id="@+id/hora"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserratbold"
+            android:textSize="50sp"
+            android:gravity="center"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/plan"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/cocina"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        >
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/calendario"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/calendario"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratbold"
+                android:textSize="30sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/alimentos"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/productos"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/recetas"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginRight="20dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/recetas"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    <!-- cambiar este por imagenbutton y poner con scr la imagen de grafico pastel -->
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/Configuracion"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/ic_config_foreground"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayoutTemp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        >
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animacionTemp"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginRight="20dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="20dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="100"
+                android:progressDrawable="@drawable/circlein"
+                android:rotation="-90" />
+
+        <TextView
+            android:id="@+id/textViewBluetoothdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

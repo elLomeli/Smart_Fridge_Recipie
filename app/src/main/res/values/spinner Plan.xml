@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Plan">
+        <item>Mantener Peso</item>
+        <item>Subir Peso</item>
+        <item>Bajar Peso</item>
+        </string-array>
+</resources>

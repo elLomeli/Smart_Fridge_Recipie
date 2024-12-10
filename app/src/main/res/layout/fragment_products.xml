@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Products_Fragment"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageProducts"
+                android:layout_width="@dimen/foto_width"
+                android:layout_height="@dimen/foto_height"
+                android:layout_gravity="center"
+                android:background="#DFD9D9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageButton
+                android:id="@+id/addImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/txt"
+                android:src="@drawable/ic_camera"
+                android:onClick="Camera"
+                tools:ignore="SpeakableTextPresentCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Nombre :"
+                android:fontFamily="@font/montserratbold"
+                android:textColor="@color/black"
+                android:textSize="35dp" />
+            <EditText
+                android:id="@+id/nombreP"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:fontFamily="@font/montserratregular"
+                android:hint="Nombre"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Marca :"
+                android:fontFamily="@font/montserratbold"
+                android:textColor="@color/black"
+                android:textSize="35dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/marca"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserratregular"
+                android:hint="Marca"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Codigo de Barras :"
+                android:fontFamily="@font/montserratbold"
+                android:textColor="@color/black"
+                android:textSize="35dp"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <EditText
+                    android:id="@+id/codigo"
+                    android:layout_width="450dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserratregular"
+                    android:hint="Codigo"
+                    android:inputType="numberDecimal"
+                    android:minHeight="48dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="18dp" />
+
+                <ImageButton
+                    android:id="@+id/getcode"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/barcode_foreground"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Piezas :"
+                android:fontFamily="@font/montserratbold"
+                android:textColor="@color/black"
+                android:textSize="35dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/piezas"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserratregular"
+                android:hint="Piezas"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Gramos/Mililitros :"
+                android:fontFamily="@font/montserratbold"
+                android:textColor="@color/black"
+                android:textSize="35dp"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+            <EditText
+                android:id="@+id/gramos"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserratregular"
+                android:hint="gramos / mililitros"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18dp" />
+
+                <Spinner
+                    android:id="@+id/medida"
+                    android:layout_width="90dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:background="@color/IconGray"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Locacion :"
+                    android:fontFamily="@font/montserratbold"
+                    android:textColor="@color/black"
+                    android:textSize="35dp" />
+
+                <Spinner
+                    android:id="@+id/locacion"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:background="@color/IconGray"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addProducts"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="AGREGAR"
+                android:textSize="11sp"
+
+                />
+
+        </LinearLayout>
+</LinearLayout>

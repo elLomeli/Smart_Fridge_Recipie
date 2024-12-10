@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Opciones para el Spinner de Horarios -->
+    <string-array name="horarios_array">
+        <item>Desayuno</item>
+        <item>Comida</item>
+        <item>Cena</item>
+        <item>Todos</item>
+    </string-array>
+
+    <!-- Opciones para el Spinner de Vegetarianos -->
+    <string-array name="vegetariana_array">
+        <item>Si</item>
+        <item>No</item>
+        <item>Todos</item>
+    </string-array>
+</resources>

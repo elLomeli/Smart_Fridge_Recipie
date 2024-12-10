@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="foto_width">300dp</dimen>
+    <dimen name="foto_height">300dp</dimen>
+    <dimen name="foto_ampliada_width">450dp</dimen>
+    <dimen name="foto_ampliada_height">450dp</dimen>
+</resources>
